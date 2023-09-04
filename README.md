@@ -27,3 +27,72 @@ Week | Content
 Week1 | Introduction to JavaScript and Nodejs
 Week2 | Code Version Control with Git and GitHub
 Week3| NodeJS as a Server
+
+## Data Structure
+
+### Server Side:
+
+#### 1. Users (`user.json`)
+
+- **id**: User ID
+- **username**
+- **password**
+- **email**
+- **roles**: Roles the user has (super admin, group admin, chat user)
+
+#### 2. Group (`group.json`)
+
+- **id**: Group ID
+- **name**: Group name
+- **admins**: Group admins
+- **users**: Group chat users
+- **createUser**: The user who created the group
+
+#### 3. Channels (`channel.json`)
+
+- **id**: Channel ID
+- **name**: Channel name
+- **groupId**: Corresponding group ID
+- **banUsers**: List of users banned from the channel
+
+#### 4. Ban User Logs (`log.json`)
+
+- **id**: Log ID
+- **content**: Description of which user has been banned for which channel
+
+### Client Side:
+
+#### 1. Group Component:
+
+- **userInfo**: User roles
+- **groupId**: Currently displayed group id
+- **groupData**: Information about the currently displayed group
+- **joinedList**: List of people in the group
+- **waitList**: List of applicants waiting for approval
+- **channelList**: List of channels
+- **newChannelRowVisible**: Boolean indicating whether to display new channels
+- **newChannelName**: Name of the new channel
+- **currentBanUserChannelId**: ID of the channel where the user is currently banned
+- **banUsername**: Username to be banned
+- **currentSelectChannel**: Information about the currently selected channel
+
+#### 2. Home Component:
+
+- **userInfo**: User roles
+- **groupList**: List of group names
+
+#### 3. Login Component:
+
+- **username**
+- **password**
+- **email**
+- **isReg**: Boolean check for registration status
+
+#### 4. Manage User Component:
+
+- **userList**: List of users containing [id, username, email, role]
+- **logList**: List of logs containing [id, content]
+
+#### 5. Profile Component:
+
+- **userInfo**: User details [id, username, password, email, roles]
