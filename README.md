@@ -321,7 +321,7 @@ Models have not been incorporated in this project. Given the limited data struct
   - **Return Value:** Success message or error.
   - **Purpose:** Add a role to a user.
 
-### Interaction between client and server
+### 3. Interaction between client and server
 
 #### 1. Channel Routes:
 
