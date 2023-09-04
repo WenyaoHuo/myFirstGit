@@ -153,11 +153,11 @@ Models have not been incorporated in this project. Given the limited data struct
 
 #### Functions and files
 
-##### `query` folder
+##### 1. `query` folder
 - **query/index.js**: Manage local storage for JSON data.
   - Functions: `select`, `insert`, `update`, `del`
 
-##### `routes` folder
+##### 2. `routes` folder
 - **routes/channel.js**: Channel related routes.
   - Functions: Post methods for `/add`, `/list`, `/delete`, `/ban-user`
 - **routes/group.js**: Group related routes.
@@ -167,7 +167,7 @@ Models have not been incorporated in this project. Given the limited data struct
 - **routes/user.js**: User related routes.
   - Functions: Get method for `/`, Post methods for `/login`, `/register`, `/delete/account`, `/add-role`
 
-##### `service` folder
+##### 3. `service` folder
 - **service/channel.js**: Business logic for channels.
   - Functions: `insert`, `selectByGroupId`, `deleteById`, `banUser`
 - **service/group.js**: Business logic for groups.
@@ -177,19 +177,19 @@ Models have not been incorporated in this project. Given the limited data struct
 - **service/user.js**: Business logic for users.
   - Functions: `selectAll`, `selectOneByName`, `selectOneById`, `insert`, `deleteByid`, `changeRole`
 
-##### `utils` folder
+##### 4. `utils` folder
 - **utils/index.js**: Utility function to generate random strings.
   - Functions: `randomStrWithLength`
 - **utlis/response.js**: Response utilities.
   - Functions: `success`, `error`, `auth`
 
-##### `data` folder
+##### 5. `data` folder
 - **data/channel.json**: Store channel information.
 - **data/group.json**: Contains group details.
 - **data/log.json**: Maintains logs.
 - **data/user.json**: Stores user information.
 
-##### `app.js` file
+##### 6. `app.js` file
 - Express application main entry point.
   - Functions: `select`, `insert`, `update`, `del`
 
